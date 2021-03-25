@@ -37,7 +37,8 @@ Example : `path: /bsb(/|$)(.*)` 这个表达式 使用了 regex 来表示 一个
   - either or : `|` 
   - end of a string: `$` 
   - quantifiers: `*` 
-
+说明：  /bsb(/|$) : 表示 match either `/` or end of a string `$`
+      （.*）： 表示 0个 或 多个 任意 character       
 
 
   
