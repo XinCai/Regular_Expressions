@@ -1,7 +1,7 @@
 # Regular_Expressions
 Regular Expressions (regex) tutorial
 
-如何理解 `nginx.ingress.kubernetes.io/rewrite-target` 
+如何理解 kubernetes nginx ingress 中的 annotation `nginx.ingress.kubernetes.io/rewrite-target` 
 
 [rewrite target 原文](https://kubernetes.github.io/ingress-nginx/examples/rewrite/#rewrite-target "rewrite target")
 
@@ -37,3 +37,6 @@ For example, the ingress definition above will result in the following rewrites:
 
 [Captured groups](https://www.regular-expressions.info/refcapture.html "Captured groups") are saved in numbered placeholders, chronologically, in the form $1, $2 ... $n. These placeholders can be used as parameters in the rewrite-target annotation.
 
+### 如何测试 K8s 的 Nginx Ingress 
+
+Check if the contents of the annotation are present in the nginx.conf file using: `kubectl exec ingress-nginx-controller-873061567-4n3k2 -n kube-system -- cat /etc/nginx/nginx.conf` 
