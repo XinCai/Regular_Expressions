@@ -30,3 +30,7 @@ Quantifiers:
 
 [a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
 ```
+
+Example : `path: /bsb(/|$)(.*)`
+
+这个表达式 使用了 regex 来表示 一个url path
