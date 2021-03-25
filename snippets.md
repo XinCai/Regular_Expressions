@@ -42,6 +42,8 @@ Example : `path: /bsb(/|$)(.*)` 这个表达式 使用了 regex 来表示 一个
 
       （.*）： 表示 0个 或 多个 任意 character       
 
-使用这个annotation, `nginx.ingress.kubernetes.io/rewrite-target: /$2` , redirect URL 到 2nd group, 这个部分 `(.*)` 
+使用这个annotation,  `nginx.ingress.kubernetes.io/rewrite-target: /$2` ,  replace (redirect) URL 到 2nd group, 这个部分 `(.*)` 
+
+                    `nginx.ingress.kubernetes.io/rewrite-target: /$1`,   replace (redirect) URL 到 1st group, 这个部分 `(/|$)`
 
   
