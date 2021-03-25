@@ -1,7 +1,9 @@
 # Regular_Expressions
 Regular Expressions (regex) tutorial
 
-如何理解 `nginx.ingress.kubernetes.io/rewrite-target`
+如何理解 `nginx.ingress.kubernetes.io/rewrite-target` 
+
+[rewrite target 原文](https://kubernetes.github.io/ingress-nginx/examples/rewrite/#rewrite-target "rewrite target")
 
 ## Create an Ingress rule with a rewrite annotation:
 
